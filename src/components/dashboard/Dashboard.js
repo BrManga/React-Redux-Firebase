@@ -7,7 +7,6 @@ import {compose} from 'redux'
 
  class Dashboard extends Component {
     render() {
-        console.log(this.props)
         const {projects}=this.props
         return (
             <div className="dashboard container">
@@ -24,7 +23,6 @@ import {compose} from 'redux'
     }
 }
 const mapStateToProps=(state)=>{
-    console.log(state)
     return{
         projects: state.firestore.ordered.projects
     }
